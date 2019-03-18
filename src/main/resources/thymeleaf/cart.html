@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="fragments/header :: head"></head>
+<body>
+<div th:replace="fragments/navigation :: navbar"></div>
+<div class="uk-container">
+
+    <div class="uk-card uk-card-default uk-card-body" th:each="product: ${cart.entrySet()}">
+        <h2 th:text="${product.getKey().name}">Product name</h2>
+        <p>Quantity: [[${product.getValue()}]]</p>
+        <a class="uk-button uk-button-default" th:href="@{'/cart/remove/' + ${product.getKey().id}}">Remove</a>
+        <a class="uk-button uk-button-default" th:href="@{'/product/detail/' + ${product.getKey().id}}">Detail</a>
+    </div>
+
+    <a th:href="@{/checkout}">Checkout</a>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="fragments/header :: head(title='asdf')"></head>
+<body>
+<div th:replace="fragments/navigation :: navbar"></div>
+<div class="uk-container">
+    <div class="uk-child-width-expand@s uk-text-center" uk-grid>
+        <div class="uk-card uk-card-default uk-card-body" th:each="product: ${products}">
+            <h2 th:text="${product.name}">Product name</h2>
+            <a class="uk-button uk-button-default" th:href="@{'/cart/add/' + ${product.id}}">Buy</a>
+            <a class="uk-button uk-button-default" th:href="@{'/product/detail/' + ${product.id}}">Detail</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

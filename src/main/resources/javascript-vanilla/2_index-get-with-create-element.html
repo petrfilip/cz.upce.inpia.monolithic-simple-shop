@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript demo</title>
+
+    <style>
+        #product-list {
+            margin: auto;
+            width: 200px;
+        }
+
+        .product {
+            border: 1px solid black;
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="product-list"></div>
+
+<button onclick="loadProducts();">Load products</button>
+
+<script>
+
+    function loadProducts() {
+        var apiAddress = "http://localhost:8080/api/product";
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                var products =  JSON.parse(xhttp.responseText);
+                var rootDiv = document.getElementById("product-list");
+
+                for (var j = 0; j < products.length; j++) {
+                    var productDiv = document.createElement("div");
+                    productDiv.className = "product";
+
+                    var productNameDiv = document.createElement("h2");
+                    productNameDiv.innerText = products[j].name;
+                    productDiv.appendChild(productNameDiv);
+
+                    var productIdDiv = document.createElement("button");
+                    productIdDiv.innerText = products[j].id;
+                    productDiv.appendChild(productIdDiv);
+
+                    rootDiv.appendChild(productDiv);
+                }
+
+            }
+        };
+        xhttp.open("GET", apiAddress, true);
+        xhttp.send();
+    }
+</script>
+</body>
+</html>

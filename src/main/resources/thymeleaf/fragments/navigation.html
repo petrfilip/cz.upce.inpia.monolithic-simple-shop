@@ -1,0 +1,22 @@
+<nav th:fragment="navbar" class="uk-navbar-container" uk-navbar xmlns:th="http://www.w3.org/1999/xhtml">
+
+    <div class="uk-navbar-left">
+
+        <ul class="uk-navbar-nav">
+            <li><a href="/">Product list</a></li>
+        </ul>
+
+    </div>
+
+    <div class="uk-navbar-right">
+
+        <ul class="uk-navbar-nav">
+            <li class="uk-active">
+                <a th:href="@{/cart}">Basket</a>
+            </li>
+
+        </ul>
+
+    </div>
+
+</nav>

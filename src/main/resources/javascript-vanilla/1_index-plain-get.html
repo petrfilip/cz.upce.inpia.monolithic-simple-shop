@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript demo</title>
+
+</head>
+<body>
+
+<div id="product-list"></div>
+
+<button onclick="loadProducts();">Load products</button>
+
+<script>
+
+    function loadProducts() {
+        var apiAddress = "http://localhost:8080/api/product";
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("product-list").innerHTML = this.responseText;
+            }
+        };
+        xhttp.open("GET", apiAddress, true);
+        xhttp.send();
+    }
+</script>
+</body>
+</html>
