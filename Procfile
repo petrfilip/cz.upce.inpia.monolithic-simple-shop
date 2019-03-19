@@ -1,0 +1,1 @@
+web: java $JAVA_OPTS -jar target/inpia-simple-shop-0.0.1-SNAPSHOT.jar --spring.profiles.active=heroku --server.port=$PORT
