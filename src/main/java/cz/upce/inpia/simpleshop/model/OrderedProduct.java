@@ -1,6 +1,6 @@
-package cz.upce.inpia.simpleshop.entity;
+package cz.upce.inpia.simpleshop.model;
 
-import cz.upce.inpia.simpleshop.entity.base.BaseEntity;
+import cz.upce.inpia.simpleshop.model.base.BaseEntity;
 import lombok.Data;
 
 import javax.persistence.Column;

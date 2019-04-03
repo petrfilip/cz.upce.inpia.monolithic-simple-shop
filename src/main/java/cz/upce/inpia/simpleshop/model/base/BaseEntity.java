@@ -1,4 +1,4 @@
-package cz.upce.inpia.simpleshop.entity.base;
+package cz.upce.inpia.simpleshop.model.base;
 
 import lombok.Data;
 

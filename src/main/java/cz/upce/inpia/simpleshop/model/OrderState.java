@@ -1,4 +1,4 @@
-package cz.upce.inpia.simpleshop.entity;
+package cz.upce.inpia.simpleshop.model;
 
 public enum OrderState {
     NEW,

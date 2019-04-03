@@ -1,6 +1,6 @@
 package cz.upce.inpia.simpleshop.service;
 
-import cz.upce.inpia.simpleshop.entity.Product;
+import cz.upce.inpia.simpleshop.model.Product;
 
 import java.util.Map;
 

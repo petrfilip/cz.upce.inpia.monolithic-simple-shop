@@ -2,10 +2,10 @@ package cz.upce.inpia.simpleshop.service;
 
 import cz.upce.inpia.simpleshop.dao.OrderFormDao;
 import cz.upce.inpia.simpleshop.dao.OrderedProductDao;
-import cz.upce.inpia.simpleshop.entity.OrderForm;
-import cz.upce.inpia.simpleshop.entity.OrderState;
-import cz.upce.inpia.simpleshop.entity.Product;
-import cz.upce.inpia.simpleshop.entity.OrderedProduct;
+import cz.upce.inpia.simpleshop.model.OrderForm;
+import cz.upce.inpia.simpleshop.model.OrderState;
+import cz.upce.inpia.simpleshop.model.Product;
+import cz.upce.inpia.simpleshop.model.OrderedProduct;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.context.annotation.ScopedProxyMode;

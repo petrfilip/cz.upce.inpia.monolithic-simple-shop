@@ -1,6 +1,6 @@
-package cz.upce.inpia.simpleshop.entity;
+package cz.upce.inpia.simpleshop.model;
 
-import cz.upce.inpia.simpleshop.entity.base.BaseEntity;
+import cz.upce.inpia.simpleshop.model.base.BaseEntity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -22,6 +22,8 @@ public class Product extends BaseEntity {
     private String description;
 
     private boolean isActive;
+
+    private Double amount;
 
 
 

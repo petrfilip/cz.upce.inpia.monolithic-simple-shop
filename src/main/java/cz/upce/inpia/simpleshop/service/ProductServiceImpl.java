@@ -1,7 +1,7 @@
 package cz.upce.inpia.simpleshop.service;
 
 import cz.upce.inpia.simpleshop.dao.ProductDao;
-import cz.upce.inpia.simpleshop.entity.Product;
+import cz.upce.inpia.simpleshop.model.Product;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -20,6 +20,14 @@ public class InpiaSimpleShopApplication extends WebMvcConfigurerAdapter {
             registry.addResourceHandler("/thymeleaf/static/**")
                     .addResourceLocations("classpath:/thymeleaf/static/");
         }
+
+        //swagger UI workaround
+        registry
+                .addResourceHandler("swagger-ui.html")
+                .addResourceLocations("classpath:/META-INF/resources/");
+        registry
+                .addResourceHandler("/webjars/**")
+                .addResourceLocations("classpath:/META-INF/resources/webjars/");
     }
 
 }

@@ -1,6 +1,6 @@
 package cz.upce.inpia.simpleshop.controller.rest;
 
-import cz.upce.inpia.simpleshop.entity.Product;
+import cz.upce.inpia.simpleshop.model.Product;
 import cz.upce.inpia.simpleshop.service.ProductServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
