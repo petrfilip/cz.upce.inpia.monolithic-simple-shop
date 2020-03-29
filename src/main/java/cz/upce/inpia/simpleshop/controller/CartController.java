@@ -1,8 +1,8 @@
 package cz.upce.inpia.simpleshop.controller;
 
 import cz.upce.inpia.simpleshop.model.Product;
-import cz.upce.inpia.simpleshop.service.ProductServiceImpl;
 import cz.upce.inpia.simpleshop.service.CartService;
+import cz.upce.inpia.simpleshop.service.ProductServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

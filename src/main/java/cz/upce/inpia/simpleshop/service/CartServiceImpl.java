@@ -4,18 +4,17 @@ import cz.upce.inpia.simpleshop.dao.OrderFormDao;
 import cz.upce.inpia.simpleshop.dao.OrderedProductDao;
 import cz.upce.inpia.simpleshop.model.OrderForm;
 import cz.upce.inpia.simpleshop.model.OrderState;
-import cz.upce.inpia.simpleshop.model.Product;
 import cz.upce.inpia.simpleshop.model.OrderedProduct;
+import cz.upce.inpia.simpleshop.model.Product;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
+import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.context.annotation.ScopedProxyMode;
 import org.springframework.stereotype.Service;
 import org.springframework.web.context.WebApplicationContext;
-
-import javax.transaction.Transactional;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Map;
 
 @Service
 @Scope(value = WebApplicationContext.SCOPE_SESSION, proxyMode = ScopedProxyMode.TARGET_CLASS)
