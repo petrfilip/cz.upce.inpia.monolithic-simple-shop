@@ -1,0 +1,9 @@
+### Authenticate user
+POST http://localhost:8080/api/authenticate?username=user&password=password
+
+### Public API
+GET http://localhost:8080/api/product
+
+### Private API
+GET http://localhost:8080/api/secured/product
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJzZWN1cmUtYXBpIiwiYXVkIjoic2VjdXJlLWFwcCIsInN1YiI6InVzZXIiLCJleHAiOjE1ODcwNTkxMDgsInJvbCI6WyJST0xFX1VTRVIiXX0.jXfJw5Eecz32H3ohwSpHV_-2Gpqf13BR6MJ153JtimJTehREDPnR-uJgU3BAgblXdTJqykmeQfjyGJ2s5lIr_Q
